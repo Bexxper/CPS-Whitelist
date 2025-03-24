@@ -1,1 +1,4 @@
-928210
+local whitelist = {
+  ["928210"] = true, --Example UID - replace with your UIDs
+  --Add more UIDs here...
+}
