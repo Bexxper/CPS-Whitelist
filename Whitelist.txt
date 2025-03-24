@@ -1,2 +1,4 @@
-Futir
-Aawa
+allowedUserIds = {
+"928210", -- Futir
+"392645", -- PAHRI
+}
