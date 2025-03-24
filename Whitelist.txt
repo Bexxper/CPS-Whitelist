@@ -1,4 +1,5 @@
-allowedUserIds = {
-"928210", -- Futir
-"392645", -- PAHRI
+local whitelist = {
+    ["928210"] = true,
+    ["UID2"] = true,
+    -- Add more UIDs here...
 }
