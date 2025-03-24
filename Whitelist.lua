@@ -15,5 +15,5 @@ end
 whitelistUIDs = loadWhitelist()
 
 function isUIDAllowed(uid)
-    return whitelistUIDs[uid] == true
+    return whitelist[uid] == true
 end
