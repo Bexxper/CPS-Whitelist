@@ -12,7 +12,7 @@ function loadWhitelist()
 end
 
 -- Load daftar UID yang diizinkan
-whitelistUIDs = loadWhitelist()
+whitelist = loadWhitelist()
 
 function isUIDAllowed(uid)
     return whitelist[uid] == true
