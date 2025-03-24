@@ -1,4 +1,2 @@
-local Whitelist = {
- "928210", -- Futir
- "392645", -- PAHRI
-}
+928210
+
