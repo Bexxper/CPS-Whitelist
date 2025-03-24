@@ -1,5 +1,5 @@
 function loadWhitelist()
-    local url = "website"
+    local url = "https://raw.githubusercontent.com/Bexxper/CPS-Whitelist/refs/heads/main/Whitelist.txt"
     local response = httprequest(url, "get")
     local whitelist = {}
 
