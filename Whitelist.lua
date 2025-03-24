@@ -4,13 +4,8 @@ function loadWhitelist()
     local whitelist = {}
 
     if response then
-        for uid in response:gmatch("[^\r\n]+") do
-            local numUID = tonumber(uid)
-            if numUID then -- Check if conversion to number was successful
-                whitelist[numUID] = true
-            else
-                log("Warning: Invalid UID in whitelist: " .. uid)
-            end
+        for growID in response:gmatch("[^\r\n]+") do
+            whitelist[growID] = true
         end
     else
         log("Error: Failed to load whitelist from " .. url)
@@ -18,14 +13,12 @@ function loadWhitelist()
     return whitelist
 end
 
--- Load the whitelist.  Error handling is included.
 whitelist = loadWhitelist()
+
 if not whitelist then
-    log("Whitelist failed to load. No players will be allowed.")
-    --Consider adding a fallback action, such as shutting down the server.
-    --os.exit() -- this will stop the script.  Use cautiously.
+  log("Whitelist failed to load. No players will be allowed.")
 end
 
-function isUIDAllowed(uid)
-    return whitelist[uid] == true
+function isGrowIDAllowed(growID)
+    return whitelist[growID]
 end
