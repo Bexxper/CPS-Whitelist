@@ -1,1 +1,4 @@
-whitelist = {192812,101010}
+whitelist = {
+928210, --Futir
+927790 --Bexxper1
+}
