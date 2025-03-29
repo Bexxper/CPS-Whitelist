@@ -1,0 +1,24 @@
+function gagalwebhook()
+    MakeRequest("https://discord.com/api/webhooks/1355237111015538729/xuEEIiu0eehjXJOwl-wMduQ14LykN4lRXmbW_67WGKeX6Kq1tcZUX41n3Ebn_XnhXcx8",
+    "POST",
+    {["Content-Type"] = "application/json"},
+    [[{
+        "embeds": [{
+            "title": "GAGAL LOAD PROXY",
+            "color": 16711680,
+            "fields": [{
+                "name": ":x: Unauthorized Account",
+                "value": ":detective: GrowID : ]] .. bersih(GetLocal().name) .. [[\n:identification_card: UID : ]] .. GetLocal().userid .. [[\n:earth_asia: WORLD : ]] .. GetWorld().name .. [[",
+                "inline": false
+            }],
+            "thumbnail": {
+            "url": "https://cdn-icons-png.flaticon.com/512/9953/9953232.png"
+            },
+            "footer": {
+                "text": "DATE | TIME : ]] .. os.date("%d-%m-%Y | %H:%M:%S | ") .. [[ ",
+                "icon_url": "https://cdn-icons-png.flaticon.com/512/9953/9953232.png"
+            }
+        }]
+    }]])
+end
+gagalwebhook()
